@@ -1,0 +1,35 @@
+{
+  "name": "@nod/webpack-config-presets",
+  "version": "0.0.0-1",
+  "description": "Reusable and composable webpack presets",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NOD-studios/nod.git"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/NOD-studios/nod#readme",
+  "bugs": {
+    "url": "https://github.com/NOD-studios/nod/issues"
+  },
+  "scripts": {
+    "link-parent-bin": "link-parent-bin"
+  },
+  "devDependencies": {
+    "@nod/debug-with-package-name": "^0.0.0-1",
+    "webpack-dotenv-plugin": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv-safe": "^4.0.4",
+    "flow-bin": "^0.66.0",
+    "flow-typed": "^2.3.0",
+    "ramda": "^0.25.0",
+    "webpack": "^3.10.0"
+  },
+  "eslintIgnore": [
+    "bin",
+    "build",
+    "flow-typed",
+    "node_modules"
+  ]
+}
