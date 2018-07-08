@@ -2,7 +2,8 @@
   "name": "@nod/webpack-config-presets",
   "version": "1.4.0-1",
   "description": "Reusable and composable webpack presets",
-  "main": "./index.js",
+  "main": "./build/main.js",
+  "module": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NOD-studios/nod.git"
