@@ -13,18 +13,21 @@
     "url": "https://github.com/NOD-studios/nod/issues"
   },
   "scripts": {
-    "link-parent-bin": "link-parent-bin"
+    "build": "cross-env NODE_ENV=production backpack build",
+    "test": "react-scripts test"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^0.0.0-1",
-    "webpack-dotenv-plugin": "^2.0.2"
-  },
-  "dependencies": {
+    "@nod/debug-with-package-name": "^1.0.3",
+    "webpack-dotenv-plugin": "^2.0.2",
+    "backpack-core": "^0.7.0",
+    "react-scripts": "^1.1.4",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.66.0",
     "flow-typed": "^2.3.0",
-    "ramda": "^0.25.0",
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
   },
   "eslintIgnore": [
     "bin",
