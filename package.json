@@ -1,6 +1,6 @@
 {
   "name": "@nod/webpack-config-presets",
-  "version": "0.0.0-1",
+  "version": "1.4.0-1",
   "description": "Reusable and composable webpack presets",
   "main": "./index.js",
   "repository": {
@@ -17,14 +17,14 @@
     "test": "react-scripts test"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^1.0.3",
-    "webpack-dotenv-plugin": "^2.0.2",
+    "@nod/debug-with-package-name": "^1.4.0-1",
     "backpack-core": "^0.7.0",
-    "react-scripts": "^1.1.4",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.66.0",
     "flow-typed": "^2.3.0",
-    "webpack": "^3.10.0"
+    "react-scripts": "^1.1.4",
+    "webpack": "^3.10.0",
+    "webpack-dotenv-plugin": "^2.0.2"
   },
   "dependencies": {
     "ramda": "^0.25.0"
