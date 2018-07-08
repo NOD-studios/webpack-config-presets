@@ -1,6 +1,6 @@
 {
   "name": "@nod/webpack-config-presets",
-  "version": "1.4.0-1",
+  "version": "1.4.3-0",
   "description": "Reusable and composable webpack presets",
   "main": "./build/main.js",
   "module": "./src/index.js",
@@ -18,7 +18,7 @@
     "test": "react-scripts test"
   },
   "devDependencies": {
-    "@nod/debug-with-package-name": "^1.4.0-1",
+    "@nod/debug-with-package-name": "^1.4.3-0",
     "backpack-core": "^0.7.0",
     "dotenv-safe": "^4.0.4",
     "flow-bin": "^0.66.0",
