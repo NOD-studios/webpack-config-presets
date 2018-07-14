@@ -13,18 +13,18 @@ const DotenvPlugin = require('webpack-dotenv-plugin')
 const reducePluginLeft = pipe(
   ({ plugins, ...webpackConfig }) => ({
     ...webpackConfig,
-    plugins: plugins || []
+    plugins: plugins || [],
   }),
   ({ plugins: [pluginToReduce, ...plugins], ...webpackConfig }) => ({
     ...webpackConfig,
-    plugins
+    plugins,
   })
 )
 
 const web = pipe(
   ({ node, ...webpackConfig }) => ({
     ...webpackConfig,
-    node: either(node, {})
+    node: either(node, {}),
   }),
   ({ node, ...webpackConfig }) => ({
     ...webpackConfig,
@@ -35,8 +35,8 @@ const web = pipe(
       net: 'empty',
       tls: 'empty',
       module: 'empty',
-      console: false
-    }
+      console: false,
+    },
   })
 )
 
@@ -55,12 +55,12 @@ const dotEnv = pipe(
   },
   ({ ...state }) => ({
     ...state,
-    dotEnvPath: join(__dirname, '.env')
+    dotEnvPath: join(__dirname, '.env'),
   }),
   ({ dotEnvPath: path, dotEnvExists, ...state }) => ({
     ...state,
     dotEnvPath: path,
-    dotEnvPlugin: dotEnvExists ? [new DotenvPlugin({ path })] : []
+    dotEnvPlugin: dotEnvExists ? [new DotenvPlugin({ path })] : [],
   }),
   ({
     webpackConfig: { plugins: webpackPlugins, ...webpackConfig },
@@ -68,16 +68,16 @@ const dotEnv = pipe(
   }) => ({
     ...state,
     webpackPlugins: either(webpackPlugins, []),
-    webpackConfig
+    webpackConfig,
   }),
   ({ dotEnvPlugin, webpackPlugins, webpackConfig, ...state }) => ({
     ...webpackConfig,
-    plugins: [...webpackPlugins, ...dotEnvPlugin]
+    plugins: [...webpackPlugins, ...dotEnvPlugin],
   })
 )
 
 module.exports = {
   reducePluginLeft,
   dotEnv,
-  web
+  web,
 }
