@@ -20,8 +20,9 @@
   "devDependencies": {
     "@nod/debug-with-package-name": "^1.4.7-1",
     "backpack-core": "^0.7.0",
-    "flow-bin": "^0.66.0",
-    "flow-typed": "^2.3.0",
+    "flow-bin": "^0.78.0",
+    "flow-runtime": "^0.17.0",
+    "flow-typed": "^2.5.1",
     "react-scripts": "^1.1.4",
     "webpack": "^3.10.0",
     "webpack-dotenv-plugin": "^2.0.2"
