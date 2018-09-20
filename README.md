@@ -1,4 +1,7 @@
 # @nod/webpack-config-presets
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/NOD-studios/webpack-config-presets.svg)](https://greenkeeper.io/)
+
 Reusable and composable webpack presets
 
 ## Installation
